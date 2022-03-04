@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <mate charest="utf-8" />
+    <title>Hello world!</title>
+    <style type="text/css">
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+
+      }
+      th, td {
+        padding: 15px;
+      }
+      table {
+        border-spacing: 5px;
+      }
+
+    th {
+      text-align: left;
+    }
+    </style>
+  </head>
+  <body>
+    <h3 style="text-align: center;">User List</h3>
+    <table style="width:100%">
+      <thead>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+      </thead>
+      <tbody>
+        {{#each lists}}
+        <tr>
+          <td>{{this.name}}</td>
+          <td>{{this.username}}</td>
+          <td>{{this.email}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </body>
+</html>
